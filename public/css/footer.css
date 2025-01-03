@@ -1,0 +1,105 @@
+.s-footer {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    background-color: #3b0d11;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.882;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.s-footer a {
+    color: #ffffff;
+}
+
+.s-footer h4 {
+    margin-top: 1.6rem;
+    margin-bottom: 1.4rem;
+    color: #ffffff;
+}
+
+.s-footer .btn--footer {
+    border-color: #21070a;
+    background-color: #21070a;
+    padding: 6 4rem;
+}
+
+.s-footer .btn--footer:hover,
+.s-footer .btn--footer:focus {
+    border-color: #000000;
+    background-color: #000000;
+}
+
+/* -------------------------------------------------------------------
+   * ## footer logo 
+   * ------------------------------------------------------------------- */
+.footer-logo {
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo a {
+    display: block;
+}
+
+.s-footer .footer-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* -------------------------------------------------------------------
+   * ## footer list 
+   * ------------------------------------------------------------------- */
+.footer-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-list a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+    color: #ffffff;
+}
+
+.footer-list li {
+    padding-left: 0;
+}
+
+/* ------------------------------------------------------------------- 
+   * ## copyright 
+   * ------------------------------------------------------------------- */
+.ss-copyright {
+    margin-top: 0.1rem;
+    padding-right: 80px;
+    text-align: center;
+    flex: 1; 
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ss-copyright span {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.ss-copyright span::after {
+    content: "|";
+    display: inline-block;
+    padding: 0 1rem 0 1.2rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.ss-copyright span:last-child::after {
+    display: none;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ss-go-top {
+    margin-left: auto;
+}

@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Figtree', sans-serif;
+    height: 100vh;
+    color: black;
+}
+
+/* Background Image */
+body {
+    background-image: url('public/images/church.jpg'); /* Pastikan path sesuai dengan lokasi gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-wrapper {
+    background-color: rgba(255, 255, 255, 0.85); /* Transparansi pada form */
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="email"], input[type="password"], input[type="text"], input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    border-color: #007BFF;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+/* Buttons */
+input[type="submit"], .primary-button {
+    background-color: #007BFF; /* Latar belakang biru */
+    color: white;
+    border: none;
+    padding: 14px 20px; /* Penambahan padding agar tombol lebih besar */
+    border-radius: 8px; /* Agar sudut tombol melengkung */
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%; /* Tombol memenuhi lebar input fields */
+    margin-top: 10px; /* Jarak atas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi ketika hover */
+}
+
+input[type="submit"]:hover, .primary-button:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+    transform: scale(1.05); /* Efek sedikit membesar saat dihover */
+}
+
+input[type="submit"]:focus, .primary-button:focus {
+    outline: none; /* Menghilangkan border default ketika tombol fokus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Efek fokus dengan bayangan biru */
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    font-size: 0.9rem;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Checkbox label */
+label {
+    font-size: 0.9rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Footer text */
+.text-center {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+.text-center a {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Adjusting for smaller screens */
+@media screen and (max-width: 768px) {
+    .form-wrapper {
+        max-width: 90%;
+        margin: 20px 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
